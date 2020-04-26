@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[Chrome Browser Opened<br>]]>
     </line>
     <line>
-      <![CDATA[URL is loaded<br>]]>
+      <![CDATA[Chapter 1 Link is clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[Mozilla Firefox Browser Opened<br>]]>
     </line>
     <line>
       <![CDATA[Chapter 1 Link is clicked<br>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="24145" started-at="2020-04-25T14:33:20Z" finished-at="2020-04-25T14:33:45Z">
+  <suite name="Suite" duration-ms="38412" started-at="2020-04-26T11:08:26Z" finished-at="2020-04-26T11:09:04Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="17757" started-at="2020-04-25T14:33:20Z" finished-at="2020-04-25T14:33:38Z">
+    <test name="Test1" duration-ms="15542" started-at="2020-04-26T11:08:26Z" finished-at="2020-04-26T11:08:41Z">
       <class name="test.StepDefinitions.BookSite">
-        <test-method status="PASS" signature="Chapter1(java.lang.String)[pri:0, instance:test.StepDefinitions.BookSite@4590c9c3]" name="Chapter1" duration-ms="17677" started-at="2020-04-25T20:03:20Z" finished-at="2020-04-25T20:03:38Z">
+        <test-method status="PASS" signature="Chapter1(java.lang.String)[pri:0, instance:test.StepDefinitions.BookSite@27082746]" name="Chapter1" duration-ms="15496" started-at="2020-04-26T16:38:26Z" finished-at="2020-04-26T16:38:41Z">
           <params>
             <param index="0">
               <value>
@@ -29,18 +32,15 @@
               <![CDATA[Chrome Browser Opened<br>]]>
             </line>
             <line>
-              <![CDATA[URL is loaded<br>]]>
-            </line>
-            <line>
               <![CDATA[Chapter 1 Link is clicked<br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- Chapter1 -->
       </class> <!-- test.StepDefinitions.BookSite -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="6314" started-at="2020-04-25T14:33:38Z" finished-at="2020-04-25T14:33:45Z">
+    <test name="Test2" duration-ms="22838" started-at="2020-04-26T11:08:41Z" finished-at="2020-04-26T11:09:04Z">
       <class name="test.StepDefinitions.BookSite">
-        <test-method status="FAIL" signature="Chapter1(java.lang.String)[pri:0, instance:test.StepDefinitions.BookSite@58651fd0]" name="Chapter1" duration-ms="6291" started-at="2020-04-25T20:03:38Z" finished-at="2020-04-25T20:03:45Z">
+        <test-method status="PASS" signature="Chapter1(java.lang.String)[pri:0, instance:test.StepDefinitions.BookSite@224aed64]" name="Chapter1" duration-ms="22834" started-at="2020-04-26T16:38:41Z" finished-at="2020-04-26T16:39:04Z">
           <params>
             <param index="0">
               <value>
@@ -48,75 +48,13 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[permission denied
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'RAVICREED', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: permission denied
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'RAVICREED', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at main.core.UI_Module.initDriver(UI_Module.java:38)
-	at test.StepDefinitions.BookSite.Chapter1(BookSite.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
+            <line>
+              <![CDATA[Mozilla Firefox Browser Opened<br>]]>
+            </line>
+            <line>
+              <![CDATA[Chapter 1 Link is clicked<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- Chapter1 -->
       </class> <!-- test.StepDefinitions.BookSite -->

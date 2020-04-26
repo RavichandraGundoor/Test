@@ -179,7 +179,41 @@ public class UI_Module {
 		// WebElement element = FluentWait(by,10);
 		// new FluentWait()
 	}
+	
+	/**
+	 * Get the Parent Window
+	 * 
+	 * @throws Exception
+	 */
+	static String ParentWindow;
+	protected String GetParentWindowHandles() throws Exception {
+		ParentWindow = driverThread.getWindowHandle();
+		return ParentWindow;
 
+	}
+	/**
+	 * Close Child Window
+	 * 
+	 * @throws Exception
+	 */
+	protected void CloseChildWindow() throws Exception {
+		for (String winHandle : driverThread.getWindowHandles()) {
+			if(!winHandle.equalsIgnoreCase(ParentWindow)) {
+				driverThread.switchTo().window(winHandle);
+				driverThread.close();
+			}
+		}
+	}
+	/**
+	 * Switch to Parent Window
+	 * 
+	 * @throws Exception
+	 */
+	protected void SwitchtoParentWindow() throws Exception {
+		driverThread.switchTo().window(ParentWindow);
+	}
+	
+	
 	protected void Positive_Message(By by) throws Exception {
 		System.out.println("Element located by " + by);
 	}

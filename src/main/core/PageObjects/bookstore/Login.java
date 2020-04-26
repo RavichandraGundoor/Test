@@ -18,6 +18,11 @@ public class Login extends UI_Module {
 		String mainheading = GetText(Obj_MainHeading);
 		System.out.println("Main Heading is: "+mainheading);
 		
+		Thread.sleep(2000);
+		GetParentWindowHandles();
+		CloseChildWindow();
+		SwitchtoParentWindow();
+		
 	}
 
 }
