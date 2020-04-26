@@ -25,8 +25,7 @@ public class BookSite {
 		
 		driverThread = UI_Module.initDriver(Browser); //Initialize Browser
 		
-		login.Login();  //Load the URL
-		Reporter.log("URL is loaded");
+		login.Login();  //Load the URL		Reporter.log("URL is loaded");
 		
 		chapter1.Chapter1_link(); //Click on Chapter 1 Link
 		Reporter.log("Chapter 1 Link is clicked");
